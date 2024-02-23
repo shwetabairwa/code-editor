@@ -2,8 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Code Editor</title>
   </head>
-  <body></body>
+  <body>
+    <section class="container">
+      <div class="left">
+        <label>HTML</label>
+        <textarea id="code-html" cols="30" rows="10"></textarea>
+        <label>CSS</label>
+        <textarea id="code-css" cols="30" rows="10"></textarea>
+        <label>JAVASCRIPT</label>
+        <textarea id="code-js" cols="30" rows="10"></textarea>
+      </div>
+      <div class="right">
+        <label>OUTPUT</label>
+        <iframe frameborder="0" id="output"></iframe>
+      </div>
+    </section>
+  </body>
 </html>
