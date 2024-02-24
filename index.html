@@ -3,23 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code Editor</title>
   </head>
   <body>
     <section class="container">
-      <div class="left">
-        <label>HTML</label>
-        <textarea id="code-html" cols="30" rows="10"></textarea>
-        <label>CSS</label>
-        <textarea id="code-css" cols="30" rows="10"></textarea>
-        <label>JAVASCRIPT</label>
-        <textarea id="code-js" cols="30" rows="10"></textarea>
-      </div>
-      <div class="right">
-        <label>OUTPUT</label>
-        <iframe frameborder="0" id="output"></iframe>
+      <h1>Code Editor <i class="bx bx-code-alt"></i></h1>
+      <div class="editor">
+        <div class="left">
+          <label><i class="bx bxl-html5"></i>HTML</label>
+          <textarea
+            onkeyup="run()"
+            spellcheck="false"
+            id="code-html"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <label><i class="bx bxl-css3"></i>CSS</label>
+          <textarea
+            spellcheck="false"
+            onkeyup="run()"
+            id="code-css"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <label><i class="bx bxl-javascript"></i>JAVASCRIPT</label>
+          <textarea
+            spellcheck="false"
+            id="code-js"
+            onkeyup="run()"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <div class="right">
+          <label><i class="bx bx-code"></i>OUTPUT</label>
+          <iframe frameborder="0" id="output"></iframe>
+        </div>
       </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>

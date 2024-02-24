@@ -1,1 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@1,106&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+.container h1 {
+  font-weight: 600;
+  color: #fff;
+  padding: 10px;
+}
+.container {
+  text-align: center;
+
+  background-color: #ffb703;
+}
+.editor {
+  text-align: start;
+  display: flex;
+  padding: 1rem;
+  background-color: #023047;
+}
+.left,
+.right {
+  flex-basis: 50%;
+  padding: 10px;
+}
+label {
+  font-size: 18px;
+  padding-right: 5px;
+  align-items: center;
+  padding-top: 5px;
+  color: #fff;
+}
+label i {
+  padding-right: 5px;
+}
+textarea {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  background-color: #fdf0d5;
+  padding: 15px;
+  font-size: 18px;
+  box-sizing: border-box;
+  outline: 0;
+
+  color: black;
+}
+iframe {
+  height: 95%;
+  border: 0;
+  outline: none;
+
+  color: black;
+  background-color: #fdf0d5;
+  width: 100%;
+}
